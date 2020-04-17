@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+     <div class="container">
+        <h1>Find a Park!</h1>
+
+        <form id="js-form">
+            <label for="search-term">Search states</label>
+            <input type="text" name="search-term" id="js-search-term" required>
+          <br>
+            <label for="max-results">Max results to return</label>
+            <input type="number" name="max-results" id="js-max-results" value="50">
+
+            <input type="submit" value="Go!">
+        </form>
+
+        <p id="js-error-message" class="error-message"></p>
+        <section id="results" class="hidden">
+          <h2>Results</h2>
+          <ul id="results-list">
+          </ul>
+        </section>
+    </div>
+    <script
+    src="https://code.jquery.com/jquery-3.4.1.min.js"
+    integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
